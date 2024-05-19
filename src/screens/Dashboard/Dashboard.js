@@ -38,7 +38,7 @@ export default function Dashboard() {
             <Surface style={[styles.Box, styles.Box3, styles.radius]} elevation={2}>
               
               <View >
-                <Text style={[ styles.h2, styleclr.secondary2]} > <Icon style={[ styles.h2]} name="renren" />Total Workers</Text>
+                <Text style={[ styles.h2, styleclr.secondary2]} > <Icon style={[ styles.h2]} name="renren" />Total Flowers</Text>
               </View>
               <View>
                 <Surface style={[ styles.Box2, styles.radius,styles.horizantlyCenter,]}>

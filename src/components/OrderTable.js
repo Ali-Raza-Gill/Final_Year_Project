@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, ScrollView, StyleSheet, Dimensions } from 'react-native';
 import { Table, Row } from 'react-native-table-component';
 const OrderTable = ({ itemData }) => {
-  const tableHead = ["#",'Name','Date', 'Address', 'Phone','ServiceType','Worker Name','Whatsapp No','Price'];
+  const tableHead = ["#",'Name','Date', 'Address', 'Phone','ServiceType','Flower Name','Whatsapp No','Price'];
   const screenWidth = Dimensions.get('window').width;
   const cellWidth = screenWidth / tableHead.length+100;
   const columnWidth = screenWidth / tableHead.length+100;
@@ -17,7 +17,7 @@ const OrderTable = ({ itemData }) => {
       <ScrollView style={tableStyles.dataWrapper}>
         {itemData.map((item, index) => (
           <Table key={index} style={{backgroundColor:item.bgColor, }} borderStyle={{ borderWidth: 1, borderColor:"#fff", }}>
-            <Row data={[index+1,item.username,item.dateString ,item.address, item.phone, item.serviceType,item.workerName,item.whatsappNumber ,`$ ${item.price}`]} textStyle={[tableStyles.text]}
+            <Row data={[index+1,item?.username,item?.dateString ,item?.address, item?.phone, item?.serviceType,item?.workerName,item?.whatsappNumber ,`$ ${item?.price}`]} textStyle={[tableStyles.text]}
             widthArr={Array(tableHead.length).fill(columnWidth)}
             />
           </Table>

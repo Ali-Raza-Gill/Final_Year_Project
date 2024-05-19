@@ -43,7 +43,7 @@ export default function AddWorker() {
     const { workerName, category, price, serviceType, mobileNumber, whatsappNumber, location, city, description } = state
 
     if (!workerName) {
-      return notify("Workername Err", "worker name minmum length 3", "error");
+      return notify("FlowerName Err", "worker name minmum length 3", "error");
     }
     if (category === "") {
       return notify("category Err", "Select category ", "error");
@@ -92,7 +92,7 @@ export default function AddWorker() {
       formData.dateCreated = firebase.firestore.FieldValue.serverTimestamp(),
         await firestore().collection('workers').doc(formData.uid).set(formData);
 
-      notify('Success', 'worker added successfully!', 'success');
+      notify('Success', 'Flower added successfully!', 'success');
       setisloading(false);
       setState(initialState);
       setImage('');
@@ -167,7 +167,7 @@ export default function AddWorker() {
           </Picker>
           <TextInput
             style={styles.formControl}
-            placeholder='Enter Worker Price'
+            placeholder='Enter Flower Price'
             placeholderTextColor={"#D1D3D4"}
             keyboardType='number-pad'
             value={state.price}
@@ -175,7 +175,7 @@ export default function AddWorker() {
           />
           <TextInput
             style={styles.formControl}
-            placeholder='Enter Service Type'
+            placeholder='Enter Name of Flower'
             placeholderTextColor={"#D1D3D4"}
             value={state.serviceType}
             onChangeText={value => handleChange("serviceType", value)}
@@ -240,7 +240,7 @@ export default function AddWorker() {
                 activeOpacity={0.5}
                 onPress={handleSubmite}
               >
-                <Text style={[styleclr.white]}>Add Worker</Text>
+                <Text style={[styleclr.white]}>Add Flower</Text>
               </TouchableOpacity>
             }
           </View>

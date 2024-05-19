@@ -93,13 +93,7 @@ function CustomDrawerContent(props) {
 
 
       <DrawerItemList {...props} />
-      <DrawerItem
-
-        style={{ size: 100 }}
-
-        label="Web"
-        onPress={() => Linking.openURL('https://ijjazahmad11.web.app')}
-      />
+      
       <View style={{ paddingHorizontal: 15 }}>
         <Button
           title="Logout"

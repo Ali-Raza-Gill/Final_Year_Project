@@ -7,7 +7,7 @@ import { useAuthContaxt } from '../contaxts/AuthContaxt';
 import styles from '../screens/Styles/Style';
 import Dashboard from '../screens/Dashboard/Dashboard';
 import AddCategory from '../screens/Dashboard/AddCategory';
-import AddWorker from '../screens/Dashboard/AddWorker';
+import AddFlower from '../screens/Dashboard/AddWorker';
 import auth from '@react-native-firebase/auth';
 import notify from '../config/global';
 import { Surface } from 'react-native-paper';
@@ -65,7 +65,7 @@ export default function AdminDrawer() {
 
       <Drawer.Screen name="Dashboard" component={Dashboard} />
       <Drawer.Screen name="AddCategory" component={AddCategory} />
-      <Drawer.Screen name="AddWorker" component={AddWorker} />
+      <Drawer.Screen name="AddFlower" component={AddFlower} />
       <Drawer.Screen name="Orders" component={Order} />
       <Drawer.Screen name="Profile" component={Profile} />
 

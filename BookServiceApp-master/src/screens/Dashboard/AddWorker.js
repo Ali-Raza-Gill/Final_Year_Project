@@ -129,14 +129,14 @@ export default function AddWorker() {
 
       await firestore().collection('workers').doc(formData.uid).set(formData);
 
-      notify('Success', 'worker added successfully!', 'success');
+      notify('Success', 'Flower added successfully!', 'success');
       setisloading(false);
       setState(initialState);
       setfileName('');
       setfileSize('');
     } catch (error) {
-      console.error('Error adding worker:', error);
-      notify('Error', 'worker not added!', 'error');
+      console.error('Error adding Flower:', error);
+      notify('Error', 'Flower not added!', 'error');
       setisloading(false);
     }
   };
@@ -166,7 +166,7 @@ export default function AddWorker() {
         />
         <TextInput
           style={styles.formControl}
-          placeholder='Enter Worker Price'
+          placeholder='Enter Flower Price'
           placeholderTextColor={"#D1D3D4"}
           value={state.price}
           onChangeText={value => handleChange("price", value)}
@@ -237,7 +237,7 @@ export default function AddWorker() {
               activeOpacity={0.5}
               onPress={handleSubmite}
             >
-              <Text style={[styleclr.white]}>Add Worker</Text>
+              <Text style={[styleclr.white]}>Add Flower</Text>
             </TouchableOpacity>
           }
         </View>

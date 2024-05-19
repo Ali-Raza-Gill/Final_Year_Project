@@ -32,7 +32,7 @@ export default function Home({ navigation }) {
           </View>
           <View style={{marginVertical:10,paddingHorizontal:10}}>
             <Text style={[styles.h2, styles.h,{color:"white"}]}>House of <Text style={{ color: "lightgreen",fontStyle:"italic" }}>Bloosoms</Text> where you can find the best flowers</Text>
-            <Text style={[styles.h7, styles.heart,{color:"white"}]}><Text style={{ color: "lightgreen",fontStyle:"italic" }}>Flowers</Text> fromHeart </Text>
+            <Text style={[styles.h7, styles.heart,{color:"white"}]}><Text style={{ color: "lightgreen",fontStyle:"italic" }}>Flowers</Text> from Heart </Text>
             
           </View>
           <View >
